@@ -1,6 +1,10 @@
 import requests
 from urllib.parse import urlencode
 import riotsettings
+import os
+
+#import from bashrc to keep key private
+API_KEY = os.getenv("API_KEY")
 
 def get_puud(gameName=None, tagLine=None, region=riotsettings.DEFAULT_REGION):
     if not gameName:
@@ -11,7 +15,7 @@ def get_puud(gameName=None, tagLine=None, region=riotsettings.DEFAULT_REGION):
 
 
     params = {
-        'api_key': riotsettings.API_KEY
+        'api_key': API_KEY
     }
 
     api_url = f"https://{region}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{gameName}/{tagLine}"
@@ -26,7 +30,7 @@ def get_puud(gameName=None, tagLine=None, region=riotsettings.DEFAULT_REGION):
     
 def get_actid(region=riotsettings.DEFAULT_REGION):
     params = {
-        'api_key': riotsettings.API_KEY
+        'api_key': API_KEY
     }
 
     api_url = f"https://na.api.riotgames.com/val/content/v1/contents"

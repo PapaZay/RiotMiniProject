@@ -8,7 +8,7 @@ account = get_puud(gameName, tagLine)
 print(account['gameName'] + " #" + account['tagLine'])
 print("Your PUUID is: " + account['puuid'])
 actid = get_actid()
-if actid:
+'''if actid:
     for act in actid:
         act_name = act.get('name')
         act_id = act.get('id')
@@ -16,4 +16,4 @@ if actid:
 
         print(f"Act ID: {act_id}")
     else:
-        print("No act info available.")
+        print("No act info available.")'''
