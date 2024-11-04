@@ -1,2 +1,2 @@
 # RiotMiniProject
-Mini project that uses Riot Games API
+Mini project that uses Riot Games API (WIP)
