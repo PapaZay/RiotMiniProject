@@ -1,8 +1,8 @@
 from riotfuncs import get_puud
 from riotfuncs import get_actid
 
-gameName = "Zay"
-tagLine = "2620"
+gameName = ""
+tagLine = ""
 
 account = get_puud(gameName, tagLine)
 print(account['gameName'] + " #" + account['tagLine'])
